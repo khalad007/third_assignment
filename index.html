@@ -25,16 +25,14 @@
 
 <body class="font-lato ">
     <header>
-        <div class="navbar md:bg-red-500 lg:w-[90%] lg:mx-[5%] lg:bg-red-500 lg:p-6 rounded-[60px] lg:my-5 ">
+        <div class="navbar md:bg-red-500 md:w-[90%] md:mx-[5%] lg:w-[90%] lg:mx-[5%] lg:bg-red-500 lg:p-6 rounded-[60px] lg:my-5 ">
             <!-- menu list -->
             <div class="text-white text-base flex-1 hidden lg:block">
                 <ul class="flex">
-                    <li class="mr-3"><a>Home</a></li>
-                    <li class="mr-3">
-                        <a>About Us</a>
-                    </li>
-                    <li class="mr-3"><a>Shop</a></li>
-                    <li class="mr-3"><a>All Fruits</a></li>
+                    <a href=""><li class="mr-3">Home</li></a>
+                    <a href=""><li class="mr-3">About Us</li></a>
+                    <a href=""><li class="mr-3">Shop</li></a>
+                    <a href=""><li class="mr-3">All Fruits</li></a>
                 </ul>
             </div>
             <div class="navbar-cente flex-1 ">
@@ -51,9 +49,10 @@
             </div>
 
             <div class="flex-1 menu menu-sm hidden lg:block md:block">
-                <div class="form-control">
+                <div class="form-control relative">
                     <input type="text" placeholder="Search"
                         class="input input-bordered rounded-[26px] w-16 md:w-auto" />
+                        <i class="fa-solid fa-magnifying-glass absolute md:ml-72 lg:ml-80 mt-5 cursor-pointer"></i>
                 </div>
             </div>
             <!-- responsive small  -->
@@ -233,7 +232,7 @@
     </header>
 
     <main>
-        <!-- deal of the section  -->
+        <!-- deal of the day section  -->
 
         <section>
             <div
@@ -245,7 +244,7 @@
                         Latin literature from 45 BC, making it over 2000 years old.
                     </p>
                 </div>
-                <div class="pl-14 mt-8 lg:pl-0 lg:mt-0">
+                <div class="pl-14 mt-8 md:ml-32 lg:pl-0 lg:mt-0">
                     <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
@@ -273,6 +272,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -284,7 +284,7 @@
             <div class="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[90%] mx-[5%]">
                 <!-- card 1  -->
                 <div class="card bg-base-100 shadow-xl text-center">
-                    <figure><img class="w-20" src="./images/fruit6.png" alt="Shoes" /></figure>
+                    <figure><img class="w-16" src="./images/fruit6.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center mt-2">12.90$ - 18.85$</h2>
                         <hr>
@@ -319,7 +319,7 @@
                                 </div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Buy Now</button>
+                                    <button class="btn bg-[#F85559]">Buy Now</button>
                                     <button class="btn items-center">Close</button>
                                 </div>
                             </form>
@@ -366,7 +366,7 @@
                                 </div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Buy Now</button>
+                                    <button class="btn bg-[#F85559]">Buy Now</button>
                                     <button class="btn items-center">Close</button>
                                 </div>
                             </form>
@@ -413,7 +413,7 @@
                                 </div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Buy Now</button>
+                                    <button class="btn bg-[#F85559]">Buy Now</button>
                                     <button class="btn items-center">Close</button>
                                 </div>
                             </form>
@@ -460,14 +460,21 @@
                                 </div>
                                 <div class="modal-action">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Buy Now</button>
+                                    <button class="btn bg-[#F85559]">Buy Now</button>
                                     <button class="btn items-center">Close</button>
                                 </div>
                             </form>
                         </dialog>
                     </div>
                 </div>
+                
+
             </div>
+            <div class="text-center mt-9">
+                <button class="btn btn-error text-white">Shop All</button>
+
+            </div>
+
         </section>
 
         <!-- Team section -->
